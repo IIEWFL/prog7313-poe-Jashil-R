@@ -12,7 +12,7 @@ Running the App
 please use this: username and password is "admin" to login
 
 Clone the repository:
-https://github.com/IIEWFL/prog7313-part-2-suhail-jashil-faeez.git
+[https://github.com/IIEWFL/prog7313-part-2-suhail-jashil-faeez.git](https://github.com/IIEWFL/prog7313-poe-Jashil-R)
 Youtube video link: https://www.youtube.com/watch?v=bGuVRgGWpho 
 
 • One-Tap Expense Tracking:
