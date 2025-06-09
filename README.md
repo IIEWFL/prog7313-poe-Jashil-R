@@ -17,6 +17,7 @@ Youtube video link: https://www.youtube.com/watch?v=bGuVRgGWpho
 
 • One-Tap Expense Tracking:
 This feature allows users to quickly record expenses with a single tap, making it easy to track spending in real time. Users can select predefined categories and input amounts effortlessly, ensuring fast and efficient budgeting without navigating through complex menus.
+
 • Customizable Time Periods:
 This enables users to set personalized time frames for tracking their finances—such as daily, weekly, monthly, or custom date ranges. This flexibility helps users analyse spending patterns more effectively and manage budgets according to their individual needs.
 
