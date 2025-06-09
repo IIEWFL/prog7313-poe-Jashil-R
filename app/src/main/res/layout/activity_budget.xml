@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Layout Structure:
+    - The use of <ScrollView> and <LinearLayout> for vertically scrollable content follows Android UI guidelines:
+    https://developer.android.com/guide/topics/ui/layout/scrollview
+    https://developer.android.com/guide/topics/ui/layout/linear-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Budget Entry"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#212121"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Date & Time Inputs -->
+        <EditText
+            android:id="@+id/dateInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Select Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+            android:inputType="none" />
+
+        <EditText
+            android:id="@+id/timeInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Select Time"
+            android:focusable="false"
+            android:clickable="true"
+            android:drawableEnd="@android:drawable/ic_menu_recent_history"
+            android:inputType="none"
+            android:layout_marginTop="16dp" />
+
+        <!-- Amount & Category -->
+        <EditText
+            android:id="@+id/amountInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter Amount (e.g. 200.00)"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/categoryInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter Category (e.g. Food)"
+            android:layout_marginTop="16dp" />
+
+        <!--Buttons and ImageView:
+       - Button and ImageView used for actions and image preview:
+         https://developer.android.com/reference/android/widget/Button
+         https://developer.android.com/reference/android/widget/ImageView-->
+
+        <!-- Optional Image Input -->
+        <Button
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Attach Receipt (Optional)"
+            android:layout_marginTop="16dp" />
+
+        <ImageView
+            android:id="@+id/imagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:contentDescription="Receipt image preview" />
+
+        <!-- Action Buttons -->
+        <Button
+            android:id="@+id/addBudgetBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Budget Entry"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:textColor="@android:color/white" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

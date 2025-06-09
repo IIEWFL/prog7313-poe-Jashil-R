@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <!-- App Title -->
+        <TextView
+            android:id="@+id/mainTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BudgetMate"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#2C3E50"
+            android:layout_marginBottom="40dp" />
+
+        <!-- Buttons Section -->
+        <Button
+            android:id="@+id/addBudgetBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="➕ Add Budget"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/addExpenseBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="➖ Add Expense"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/monthlyGoalsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎯 Set Monthly Goals"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/viewListBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 View Expenses"
+            android:backgroundTint="#455A64"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/viewBudgetBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 View Budgets"
+            android:backgroundTint="#6A1B9A"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/viewGoalsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎯 View Goals"
+            android:backgroundTint="#37474F"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="24dp" />
+
+        <!-- ✅ Firebase RecyclerView Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📦 Firebase Entries"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>

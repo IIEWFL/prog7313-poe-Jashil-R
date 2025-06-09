@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Budget List"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#212121"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Budget List -->
+        <ListView
+            android:id="@+id/budgetListView"
+            android:layout_width="336dp"
+            android:layout_height="384dp"
+            android:layout_marginBottom="24dp"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp" />
+
+        <!-- Filter Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filter by Date Range"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#424242"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/startDateInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Start Date (yyyy-MM-dd)"
+            android:inputType="date"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/endDateInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="End Date (yyyy-MM-dd)"
+            android:inputType="date"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/filterButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply Filter"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>
